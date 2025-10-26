@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141010;
+}
+
+.card {
+    width: 360px;
+    height: 262px;
+    background-color: #c0a8a8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-top: 25px;
+    cursor: pointer;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    /* border: 4px solid red; */
+    /* Outer glow */
+    box-shadow: 0 0 20px rgba(216, 197, 24, 0.7), 0 0 40px rgba(235, 213, 16, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+/* Optional: Intensify glow on hover */
+
+.card:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.9), 0 0 60px rgba(255, 0, 0, 0.7);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.user-online-indicator {
+    width: 15px;
+    height: 15px;
+    background-color: #53f45a;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-name h1 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.profile-role {
+    color: #6d6d6d;
+}
+
+.card-footer {
+    width: 85%;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.social-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-buttons button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    font-size: 23px;
+    margin: 0 20px;
+}

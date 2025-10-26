@@ -25,15 +25,48 @@
             animation: ticker 10s linear infinite;
         }
     </style>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body class="bg-[#101214] text-[#7A7C80] font-['Roboto']">
     <div class="grid grid-cols-1 md:grid-cols-2 min-h-screen md:divide-x md:divide-[#2c2f33]">
 
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <div class="avatar">
+                        <div class="user-online-indicator"></div>
+                        <img src="./my_image.jpg" alt="user-image" />
+                    </div>
+                    <div class="profile-name">
+                        <h1>Saiful Islam Lipu</h1>
+                    </div>
+                    <div class="profile-role">Frontend developer</div>
+                </div>
+
+                <div class="card-footer">
+                    <div class="social-buttons">
+                        <button>
+              <i class="fab fa-instagram"></i>
+            </button>
+
+                        <button>
+              <i class="fab fa-twitter"></i>
+            </button>
+                        <button>
+              <i class="fab fa-github"></i>
+            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Left Section -->
-        <div class="flex flex-col items-center justify-center text-center py-16 md:py-0 relative">
+        <!-- <div class="flex flex-col items-center justify-center text-center py-16 md:py-0 relative">
             <img src="./my_image.jpg" alt="Saiful Islam Lipu" class="w-60 h-60 rounded-full border-4 border-green-600 mb-6 object-cover" />
-            <!-- Ticker directly under image -->
+             Ticker directly under image 
             <div class="w-full max-w-xs overflow-hidden border-t border-b border-gray-600 mb-4">
                 <div class="ticker text-white text-lg font-bold py-1">
                     Saiful Islam Lipu &nbsp; • &nbsp; Saiful Islam Lipu &nbsp; • &nbsp; Saiful Islam Lipu
@@ -46,7 +79,7 @@
                 <a href="#" class="hover:text-white transition-colors duration-300"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/sheikhsahab03" target="_blank" class="hover:text-white transition-colors duration-300"><i class="fab fa-github"></i></a>
             </div>
-        </div>
+        </div> -->
 
         <!-- Right Section -->
         <div class="flex flex-col justify-center px-6 md:px-16 py-12 md:py-0">
@@ -63,5 +96,8 @@
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+<script src="js.js"></script>
+
 
 </html>
