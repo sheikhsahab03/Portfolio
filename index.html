@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Saiful Islam Lipu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Scrolling ticker animation */
+        
+        @keyframes ticker {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .ticker {
+            display: inline-block;
+            white-space: nowrap;
+            animation: ticker 10s linear infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-[#101214] text-[#7A7C80] font-['Roboto']">
+    <div class="grid grid-cols-1 md:grid-cols-2 min-h-screen md:divide-x md:divide-[#2c2f33]">
+
+        <!-- Left Section -->
+        <div class="flex flex-col items-center justify-center text-center py-16 md:py-0 relative">
+            <img src="./my_image.jpg" alt="Saiful Islam Lipu" class="w-60 h-60 rounded-full border-4 border-green-600 mb-6 object-cover" />
+            <!-- Ticker directly under image -->
+            <div class="w-full max-w-xs overflow-hidden border-t border-b border-gray-600 mb-4">
+                <div class="ticker text-white text-lg font-bold py-1">
+                    Saiful Islam Lipu &nbsp; • &nbsp; Saiful Islam Lipu &nbsp; • &nbsp; Saiful Islam Lipu
+                </div>
+            </div>
+
+            <p class="text-lg mb-3">Dhaka, Bangladesh.</p>
+            <div class="flex space-x-4 text-xl mb-6">
+                <a href="#" class="hover:text-white transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-white transition-colors duration-300"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sheikhsahab03" target="_blank" class="hover:text-white transition-colors duration-300"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="flex flex-col justify-center px-6 md:px-16 py-12 md:py-0">
+            <h2 class="text-2xl text-white font-semibold mb-4">About</h2>
+            <p class="text-[1.1rem] leading-relaxed mb-4">
+                I’m a passionate developer with a Bachelor’s degree in Computer Science and Engineering (CSE), currently pursuing my Master’s in Computer Science and Technology. I enjoy building creative, efficient, and scalable solutions through code. With a strong
+                foundation in computer science principles and hands-on experience in software development, I love exploring new technologies, solving complex problems, and turning ideas into impactful digital products.
+            </p>
+            <p class="text-[1.1rem] leading-relaxed mb-4">
+                My interests include web development, artificial intelligence, and software engineering, and I’m always eager to learn and adapt to new tools and frameworks. When I’m not coding, I enjoy experimenting with new projects, collaborating with other developers,
+                and staying updated with the latest trends in technology.
+            </p>
+            <p class="text-[1.1rem] mt-2">📧 saifulislamlipu1@gmail.com</p>
+        </div>
+    </div>
+</body>
+
+</html>
